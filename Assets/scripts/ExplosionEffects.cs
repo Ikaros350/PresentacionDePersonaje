@@ -8,6 +8,8 @@ public class ExplosionEffects : MonoBehaviour
     [SerializeField] int state = 0;
     [SerializeField] AnimationCurve explosionCurve;
     [SerializeField] AnimationCurve RainCurve;
+    [SerializeField] AnimationCurve ComplementCurve;
+    [SerializeField] AnimationCurve ComplementEmissionCurve;
     [SerializeField] float explosionDuration, rainDuration, ExplosionMaxParticles, RainMaxParticles;
     [SerializeField] Color colorSmoke;
     [SerializeField] Gradient colorSnow;
@@ -24,10 +26,13 @@ public class ExplosionEffects : MonoBehaviour
     ParticleSystem.MainModule ps2Main;
     ParticleSystem.EmissionModule ps2Emission;
 
+    ParticleSystem.MainModule complementMain;
+    ParticleSystem.EmissionModule complementEmission;
+    ParticleSystem.ShapeModule complementShape;
     ParticleSystemRenderer ps2Renderer;
 
     AudioSource mySource;
-
+    
     float z = 0;
     float y = 0;
     float timeExplosion=0;
@@ -35,25 +40,33 @@ public class ExplosionEffects : MonoBehaviour
     void Awake()
     {
         mySource = GetComponent<AudioSource>();
+        complement = ps2.transform.GetChild(0).GetComponent<ParticleSystem>();
 
         ps1Main = ps1.main;
         ps2Main = ps2.main;
-        complement = ps2.transform.GetChild(0).GetComponent<ParticleSystem>();
+        complementMain = complement.main;
 
         ps1Emission = ps1.emission;
         ps2Emission = ps2.emission;
+        complementEmission = complement.emission;
 
         ps1Main.startColor = colorSmoke;
         ps2Main.startColor = colorSnow;
 
+        complementShape = complement.shape;
+        complementShape = complement.shape;
         ps1Main.startLifetime= explosionDuration;
         ps2Main.duration = rainDuration;
+        complementMain.duration = rainDuration;
+        complementMain.startSpeed = new ParticleSystem.MinMaxCurve(2, ComplementCurve);
 
         ps1Emission.rateOverTime = new ParticleSystem.MinMaxCurve(ExplosionMaxParticles, explosionCurve);
         ps2Emission.rateOverTime = new ParticleSystem.MinMaxCurve(RainMaxParticles, RainCurve);
+        complementEmission.rateOverTime = new ParticleSystem.MinMaxCurve(RainMaxParticles, ComplementEmissionCurve);
 
         
         light.color = colorSmoke;
+        complementShape.radius = 0;
     }
 
     // Update is called once per frame
@@ -77,6 +90,7 @@ public class ExplosionEffects : MonoBehaviour
                 if (timeExplosion >= explosionDuration+0.1f)
                 {
                     timeExplosion = 0;
+                    complementShape.radius = 2;
                     state = 1;
                 }
             }
