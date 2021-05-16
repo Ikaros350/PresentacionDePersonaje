@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ExplosionEffects : MonoBehaviour
 {
+    [Header("Principal")]
+    [SerializeField] ParticleSystem ps1;
+    [SerializeField] ParticleSystem ps2;
+    [SerializeField] Light light;
+    [SerializeField] ParticleSystem complement;
     [SerializeField] bool play = true;
     [SerializeField] int state = 0;
     [SerializeField] AnimationCurve explosionCurve;
@@ -11,14 +16,17 @@ public class ExplosionEffects : MonoBehaviour
     [SerializeField] AnimationCurve ComplementCurve;
     [SerializeField] AnimationCurve ComplementEmissionCurve;
     [SerializeField] float explosionDuration, rainDuration, ExplosionMaxParticles, RainMaxParticles;
-    [SerializeField] Color colorSmoke;
+    [Header("Ice effect")]
+    [SerializeField] Color colorIce;
     [SerializeField] Gradient colorSnow;
-    [SerializeField] Light light;
-    [SerializeField] Material psMaterial;
+    [SerializeField] Material psMaterialSnow;
 
-    [SerializeField] ParticleSystem ps1;
-    [SerializeField] ParticleSystem ps2;
-    [SerializeField] ParticleSystem complement;
+    [Header("FireEffect")]
+    [SerializeField] Color colorSmoke;
+    [SerializeField] Gradient colorFire;
+    [SerializeField] Material psMaterialCarbon;
+
+    
 
     ParticleSystem.MainModule ps1Main;
     ParticleSystem.EmissionModule ps1Emission;
@@ -29,7 +37,7 @@ public class ExplosionEffects : MonoBehaviour
     ParticleSystem.MainModule complementMain;
     ParticleSystem.EmissionModule complementEmission;
     ParticleSystem.ShapeModule complementShape;
-    ParticleSystemRenderer ps2Renderer;
+    ParticleSystemRenderer material;
 
     AudioSource mySource;
     
@@ -41,7 +49,8 @@ public class ExplosionEffects : MonoBehaviour
     {
         mySource = GetComponent<AudioSource>();
         complement = ps2.transform.GetChild(0).GetComponent<ParticleSystem>();
-
+        material = complement.GetComponent<ParticleSystemRenderer>();
+        
         ps1Main = ps1.main;
         ps2Main = ps2.main;
         complementMain = complement.main;
@@ -50,22 +59,26 @@ public class ExplosionEffects : MonoBehaviour
         ps2Emission = ps2.emission;
         complementEmission = complement.emission;
 
-        ps1Main.startColor = colorSmoke;
-        ps2Main.startColor = colorSnow;
+      
 
         complementShape = complement.shape;
         complementShape = complement.shape;
         ps1Main.startLifetime= explosionDuration;
         ps2Main.duration = rainDuration;
         complementMain.duration = rainDuration;
-        complementMain.startSpeed = new ParticleSystem.MinMaxCurve(2, ComplementCurve);
+        complementMain.startSpeed = new ParticleSystem.MinMaxCurve(5, ComplementCurve);
 
         ps1Emission.rateOverTime = new ParticleSystem.MinMaxCurve(ExplosionMaxParticles, explosionCurve);
         ps2Emission.rateOverTime = new ParticleSystem.MinMaxCurve(RainMaxParticles, RainCurve);
         complementEmission.rateOverTime = new ParticleSystem.MinMaxCurve(RainMaxParticles, ComplementEmissionCurve);
-
-        
-        light.color = colorSmoke;
+        if (CompareTag("Ice"))
+        {
+            Ice();
+        }
+        else
+        {
+            Fire();
+        }
         complementShape.radius = 0;
     }
 
@@ -110,5 +123,22 @@ public class ExplosionEffects : MonoBehaviour
                 play = false;
             } 
         }
+    }
+    void Fire()
+    {
+        ps1Main.startColor = colorSmoke;
+        ps2Main.startColor = colorFire;
+        complementMain.startColor = colorSmoke;
+        light.color = colorSmoke;
+        material.material = psMaterialCarbon;
+    }
+    void Ice()
+    {
+        ps1Main.startColor = colorIce;
+        ps2Main.startColor = colorSnow;
+        complementMain.startColor = colorIce;
+        light.color = colorIce;
+        material.material = psMaterialSnow;
+
     }
 }
