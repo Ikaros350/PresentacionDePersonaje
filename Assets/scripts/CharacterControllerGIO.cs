@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CharacterControllerGIO : MonoBehaviour
 {
@@ -11,7 +9,8 @@ public class CharacterControllerGIO : MonoBehaviour
     Vector3 originalPos;
     Quaternion originalRot;
     [SerializeField] float shootCooldown;
-    float time;
+    float shootTime;
+    float shielTime;
     
     // Start is called before the first frame update
     void Start()
@@ -20,28 +19,29 @@ public class CharacterControllerGIO : MonoBehaviour
         originalRot = transform.rotation;
         frozen = false;
         anim = GetComponent<Animator>();
-        time = shootCooldown;
+        shootTime = shootCooldown;
     }
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
+        shootTime += Time.deltaTime;
+        shielTime += Time.deltaTime;
         Shoot();
         RestorePosition();
     }
 
     void Shoot()
     {
-        if (Input.GetKeyDown("f") && time >= shootCooldown)
+        if (Input.GetKeyDown("f") && shootTime >= shootCooldown)
         {
             GameObject gameObject = Instantiate(fireProyectile, shootPos.position, Quaternion.identity);
-            time = 0;
+            shootTime = 0;
         }
-        if (Input.GetKeyDown("h") && time >= shootCooldown)
+        if (Input.GetKeyDown("h") && shootTime >= shootCooldown)
         {
             GameObject gameObject = Instantiate(iceProyectile, shootPos.position, Quaternion.identity);
-            time = 0;
+            shootTime = 0;
         }
     }
 
