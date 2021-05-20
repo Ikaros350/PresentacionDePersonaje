@@ -6,6 +6,7 @@ public class GirosFuego : MonoBehaviour
 {
     [SerializeField] float r0 = 3;
     [SerializeField] float w = 1;
+    [SerializeField] bool fuego;
     float t = 0;
 
     // Start is called before the first frame update
@@ -22,7 +23,16 @@ public class GirosFuego : MonoBehaviour
 
         float x = r * Mathf.Cos(w * t);
         float y = r * Mathf.Sin(w * t);
-        Vector3 pos = new Vector3(x, y, 0);
+        Vector3 pos;
+        if (fuego)
+        {
+            pos = new Vector3(x, y, 0);
+        }
+        else
+        {
+            pos = new Vector3(0, y, x);
+        }
+        
         transform.localPosition = pos;
     }
 }

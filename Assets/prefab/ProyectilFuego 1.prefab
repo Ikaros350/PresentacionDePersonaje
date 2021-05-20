@@ -4861,6 +4861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   r0: 0.5
   w: -5
+  fuego: 1
 --- !u!1 &2086581184562668249
 GameObject:
   m_ObjectHideFlags: 0
@@ -23908,6 +23909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   r0: 0.5
   w: 5
+  fuego: 1
 --- !u!1 &2086581185241314084
 GameObject:
   m_ObjectHideFlags: 0
