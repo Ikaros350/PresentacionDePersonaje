@@ -10,10 +10,11 @@ public class Proyectil : MonoBehaviour
     [SerializeField] ExplosionEffects explotion;
     [SerializeField] ParticleSystem proyectile;
     Collider col;
-    [SerializeField] Transform player;
+    Transform player;
     // Start is called before the first frame update
     void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("Target").GetComponent<Transform>();
         col = GetComponent<Collider>();
         myrig = GetComponent<Rigidbody>();
     }
