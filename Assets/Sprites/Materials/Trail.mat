@@ -84,7 +84,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.205
     - _GlossyReflections: 1
-    - _LightingEnabled: 0
+    - _LightingEnabled: 1
     - _Metallic: 0.431
     - _Mode: 4
     - _OcclusionStrength: 1
