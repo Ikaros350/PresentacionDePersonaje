@@ -6,11 +6,15 @@ public class Proyectil : MonoBehaviour
 {
     Transform mytransform;
     Vector3 dir = Vector3.right;
-   [SerializeField] float speed;
+    [SerializeField] float speed;
     Rigidbody myrig;
+    [SerializeField] ExplosionEffects explotion;
+    [SerializeField] ParticleSystem proyectile;
+    Collider col;
     // Start is called before the first frame update
     void Awake()
     {
+        col = GetComponent<Collider>();
         mytransform = GetComponent<Transform>();
         myrig = GetComponent<Rigidbody>();
     }
@@ -18,9 +22,13 @@ public class Proyectil : MonoBehaviour
     {
         myrig.AddForce(dir * speed);
     }
-    // Update is called once per frame
-    void Update()
+
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        explotion.Play = true;
+        col.enabled = false;
+        myrig.velocity = dir * 0f;
+        proyectile.gameObject.SetActive(false);
     }
+
 }

@@ -87,7 +87,6 @@ public class Frozen : MonoBehaviour
         if (collision.gameObject.CompareTag("Ice"))
         {
             getFrezze = true;
-            Destroy(collision.gameObject);
         }
     }
 }

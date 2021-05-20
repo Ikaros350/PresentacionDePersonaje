@@ -45,6 +45,9 @@ public class ExplosionEffects : MonoBehaviour
     float y = 0;
     float timeExplosion=0;
     float timeRain = 0;
+
+    public bool Play { get => play; set => play = value; }
+
     void Awake()
     {
         mySource = GetComponent<AudioSource>();
