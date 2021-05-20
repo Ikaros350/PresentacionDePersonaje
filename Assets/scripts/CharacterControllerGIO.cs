@@ -3,15 +3,16 @@
 public class CharacterControllerGIO : MonoBehaviour
 {
     Animator anim;
-    [SerializeField] Transform shootPos;
+    [SerializeField] Transform shootPos, shieldPosition;
     [SerializeField] GameObject fireProyectile, iceProyectile;
     bool frozen;
     Vector3 originalPos;
     Quaternion originalRot;
-    [SerializeField] float shootCooldown;
-    float shootTime;
-    float shielTime;
-    
+    [SerializeField] float shootCooldown, shieldCooldown;
+    float shootTime, shieldTime;
+    [SerializeField] RotateControl shieldControl;
+    Transform shieldActualPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +21,24 @@ public class CharacterControllerGIO : MonoBehaviour
         frozen = false;
         anim = GetComponent<Animator>();
         shootTime = shootCooldown;
+        shieldTime = shieldCooldown;
+        shieldActualPosition = shieldControl.gameObject.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
         shootTime += Time.deltaTime;
-        shielTime += Time.deltaTime;
+        shieldTime += Time.deltaTime;
         Shoot();
         RestorePosition();
+        if (Input.GetKeyDown("e") && shieldTime >= shieldCooldown)
+        {
+
+            shieldActualPosition.position = shieldPosition.position;
+            Shield();
+            shieldTime = 0;
+        }
     }
 
     void Shoot()
@@ -56,7 +66,8 @@ public class CharacterControllerGIO : MonoBehaviour
 
     void Shield()
     {
-
+        anim.SetTrigger("Shield");
+        shieldControl.CanUseShield(true);
     }
 
     private void OnCollisionEnter(Collision collision)
