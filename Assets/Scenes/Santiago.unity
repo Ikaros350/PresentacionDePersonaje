@@ -511,7 +511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1323054964
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -570,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323054963}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.15, z: 0}
+  m_LocalPosition: {x: 0, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1018,6 +1018,80 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &1303553196242932649
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1303553197323091610, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: hand
+      value: 
+      objectReference: {fileID: 543450652811631796}
+    - target: {fileID: 1303553197323091611, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_Name
+      value: ElectricMode
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.10993241
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303553197323091613, guid: 0e07b53d513d9524a814c1e99874234c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e07b53d513d9524a814c1e99874234c, type: 3}
 --- !u!1 &1339622708091790146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,6 +2866,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Proyectil Fuego
       objectReference: {fileID: 0}
+    - target: {fileID: 8352760154468387001, guid: c43107d5c0e06ea41825f604c9437dd9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c43107d5c0e06ea41825f604c9437dd9, type: 3}
 --- !u!1001 &8478137619866996952
@@ -2900,6 +2979,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Proyectil Hielo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478137620940011223, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1006a6e8f6fd45d41b34c94374fc2cf2, type: 3}
