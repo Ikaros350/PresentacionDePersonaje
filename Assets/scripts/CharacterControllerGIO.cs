@@ -66,6 +66,7 @@ public class CharacterControllerGIO : MonoBehaviour
 
     void Shield()
     {
+        anim.SetTrigger("Shield");
         shieldControl.CanUseShield(true);
     }
 
