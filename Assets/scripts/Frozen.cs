@@ -61,13 +61,13 @@ public class Frozen : MonoBehaviour
         myRender.material.SetFloat(name, value);
     }
 
-    void getFrozen(float valueText,float valueSpeed)
+   public void getFrozen(float valueText,float valueSpeed)
     {
         setFloat("_Factor", valueText);
         myAnim.speed = valueSpeed;
         
     }
-    void exitFrozen()
+   public void exitFrozen()
     {
         setFloat("_Factor", 0);
         myAnim.speed = speedAnim;
@@ -83,6 +83,11 @@ public class Frozen : MonoBehaviour
         {
             exitFrozen();
             getFrezze = false;
+        }
+        if (collision.gameObject.CompareTag("Ice"))
+        {
+            getFrezze = true;
+            Destroy(collision.gameObject);
         }
     }
 }
