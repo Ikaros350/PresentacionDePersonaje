@@ -32,7 +32,7 @@ public class CharacterControllerGIO : MonoBehaviour
         shieldTime += Time.deltaTime;
         Shoot();
         RestorePosition();
-        if (Input.GetKeyDown("e") && shieldTime >= shieldCooldown)
+        if (Input.GetKeyDown("e") && shieldTime >= shieldCooldown && !frozen)
         {
 
             shieldActualPosition.position = shieldPosition.position;
@@ -82,8 +82,11 @@ public class CharacterControllerGIO : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Ice"))
         {
+            if (!frozen)
+            {
+                anim.SetTrigger("Hit");
+            }
             frozen = true;
-            anim.SetTrigger("Hit");
         }
     }
 }
