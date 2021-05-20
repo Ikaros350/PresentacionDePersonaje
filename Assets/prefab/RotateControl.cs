@@ -12,11 +12,14 @@ public class RotateControl : MonoBehaviour
     Light pointlight;
     Renderer myRend;
     [SerializeField] float speed, intesity, alpha, duration, maxOrbitalSpeed, maxEmision;
-    float t=0;
+    float t = 0;
     Color prevColor;
-    ParticleSystem particle;
+   [SerializeField] ParticleSystem particleSkull;
+   [SerializeField] ParticleSystem particleAshes;
     ParticleSystem.VelocityOverLifetimeModule velOverlifeTime;
     ParticleSystem.EmissionModule emisionModule;
+    ParticleSystem.MainModule mainModuleSkull;
+    ParticleSystem.MainModule mainModuleAshes;
     float xOrbitalSpeed, orbitalTextureSpeed;
     [SerializeField] Transform ball;
 
@@ -24,9 +27,11 @@ public class RotateControl : MonoBehaviour
     {
         pointlight = GetComponentInChildren<Light>();
         myRend = GetComponentInChildren<Renderer>();
-        particle = GetComponentInChildren<ParticleSystem>();
-        velOverlifeTime = particle.velocityOverLifetime;
-        emisionModule = particle.emission;
+        //particleSkull = GetComponentInChildren<ParticleSystem>();
+        velOverlifeTime = particleSkull.velocityOverLifetime;
+        mainModuleAshes = particleAshes.main;
+        mainModuleSkull = particleSkull.main;
+        emisionModule = particleSkull.emission;
     }
 
     // Update is called once per frame
@@ -38,6 +43,9 @@ public class RotateControl : MonoBehaviour
         xOrbitalSpeed = orbitalCurve.Evaluate(t / duration) * maxOrbitalSpeed;
         orbitalTextureSpeed = myCurve.Evaluate(t / duration);
         velOverlifeTime.orbitalY = xOrbitalSpeed;
+        mainModuleSkull.startSize = myCurve.Evaluate(t / duration)*0.2f;
+        mainModuleAshes.startSize = myCurve.Evaluate(t / duration)*0.2f;
+
         emisionModule.rateOverTime = emisionCurve.Evaluate(t / duration) * maxEmision;
         ball.RotateAround(transform.position, Vector3.down, orbitalTextureSpeed*-speed * Time.deltaTime);
         pointlight.intensity = y*intesity;

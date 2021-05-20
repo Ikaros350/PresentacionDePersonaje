@@ -1,0 +1,804 @@
+fileFormatVersion: 2
+guid: 39e61cd048e90f144b7b82d8e44fa263
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: 8608557880554254390
+    second: wizard_dodge_005
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'wizard_dodge_005' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Saiteo1_Spine1' has translation animation
+      that will be discarded.\n\t'Saiteo1_Head' has translation animation that will
+      be discarded.\n\t'Saiteo1_LeftHand' has translation animation that will be
+      discarded.\n\t'Saiteo1_RightHand' has translation animation that will be discarded.\n\t'Saiteo1_LeftFoot'
+      has translation animation that will be discarded.\n\t'Saiteo1_RightFoot' has
+      translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: wizard_dodge_005
+      takeName: wizard_dodge_005
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 722
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Saiteo1_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Saiteo1_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: wizard_dodge_005(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_Hips
+      parentName: wizard_dodge_005(Clone)
+      position: {x: 0, y: 0.82593113, z: 0}
+      rotation: {x: -0.075140595, y: -0.010961633, z: -0.019222109, w: 0.99692744}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_Spine
+      parentName: Saiteo1_Hips
+      position: {x: -0, y: 0.07872332, z: 0}
+      rotation: {x: -0.0049308315, y: -0.003864054, z: 0.028448073, w: 0.9995757}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_Spine1
+      parentName: Saiteo1_Spine
+      position: {x: 0.000027686357, y: 0.23913991, z: -0.0000016093254}
+      rotation: {x: 0.18286128, y: -0.0012426509, z: -0.014330731, w: 0.9830335}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_Neck
+      parentName: Saiteo1_Spine1
+      position: {x: -0, y: 0.2384227, z: 0}
+      rotation: {x: 0.069955826, y: -0.0474466, z: -0.06504481, w: 0.9942958}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_Head
+      parentName: Saiteo1_Neck
+      position: {x: -0.0000021755695, y: 0.1399225, z: 0.018061876}
+      rotation: {x: 0.044758167, y: -0.0712599, z: 0.0987821, w: 0.9915447}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftShoulder
+      parentName: Saiteo1_Spine1
+      position: {x: -0.03923568, y: 0.19215213, z: -0.0021861866}
+      rotation: {x: 0.073879145, y: 0.05365502, z: -0.09311865, w: 0.9914595}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftArm
+      parentName: Saiteo1_LeftShoulder
+      position: {x: -0.14048754, y: 0, z: 0}
+      rotation: {x: 0.25913575, y: 0.0047028726, z: 0.11093046, w: 0.95943785}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftForeArm
+      parentName: Saiteo1_LeftArm
+      position: {x: -0.31586814, y: 0, z: 0}
+      rotation: {x: -0.25167772, y: -0.0018663926, z: -0.005268065, w: 0.967795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHand
+      parentName: Saiteo1_LeftForeArm
+      position: {x: -0.22309768, y: 0.002856493, z: -0.0038138628}
+      rotation: {x: -0.07607094, y: -0.07915991, z: -0.022748299, w: 0.99369484}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandThumb1
+      parentName: Saiteo1_LeftHand
+      position: {x: -0.022881206, y: -0.026001373, z: 0.036401924}
+      rotation: {x: -0.0017209494, y: 0.087546505, z: -0.0669048, w: 0.9939097}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandThumb2
+      parentName: Saiteo1_LeftHandThumb1
+      position: {x: -0.022080928, y: 0, z: 0.014400606}
+      rotation: {x: -0.00000057485875, y: 0.25946695, z: -0.0000015326074, w: 0.965752}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandThumb3
+      parentName: Saiteo1_LeftHandThumb2
+      position: {x: -0.028801212, y: 0, z: 0}
+      rotation: {x: 0, y: -0.10800412, z: -0, w: 0.99415046}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandIndex1
+      parentName: Saiteo1_LeftHand
+      position: {x: -0.09360495, y: 0, z: 0.036401924}
+      rotation: {x: 0.0027360907, y: 0.054588195, z: 0.07951604, w: 0.995334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandIndex2
+      parentName: Saiteo1_LeftHandIndex1
+      position: {x: -0.048002023, y: 0, z: 0}
+      rotation: {x: 0.000000061467276, y: 0.00000021234149, z: 0.029187271, w: 0.999574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandIndex3
+      parentName: Saiteo1_LeftHandIndex2
+      position: {x: -0.024001012, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.14114507, w: 0.9899889}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandMiddle1
+      parentName: Saiteo1_LeftHand
+      position: {x: -0.09360495, y: 0, z: 0.012064638}
+      rotation: {x: -0.00056618423, y: 0.034057546, z: 0.07484473, w: 0.9966134}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandMiddle2
+      parentName: Saiteo1_LeftHandMiddle1
+      position: {x: -0.052802224, y: 0, z: 0}
+      rotation: {x: 0.000000031024673, y: 0.000000111758666, z: 0.030776432, w: 0.99952626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandMiddle3
+      parentName: Saiteo1_LeftHandMiddle2
+      position: {x: -0.028801212, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.12597826, w: 0.992033}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandRing1
+      parentName: Saiteo1_LeftHand
+      position: {x: -0.08840467, y: 0, z: -0.012064638}
+      rotation: {x: -0.004248246, y: 0.0153306555, z: 0.06423601, w: 0.9978079}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandRing2
+      parentName: Saiteo1_LeftHandRing1
+      position: {x: -0.048002023, y: 0, z: 0}
+      rotation: {x: 0.00000008661298, y: 0.00000027939672, z: 0.03236569, w: 0.9994761}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandRing3
+      parentName: Saiteo1_LeftHandRing2
+      position: {x: -0.024001012, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.11078193, w: 0.99384475}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandPinky1
+      parentName: Saiteo1_LeftHand
+      position: {x: -0.08320439, y: 0, z: -0.036401924}
+      rotation: {x: -0.008253052, y: 0.0016712395, z: 0.05013629, w: 0.99870694}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandPinky2
+      parentName: Saiteo1_LeftHandPinky1
+      position: {x: -0.03840162, y: 0, z: 0}
+      rotation: {x: -0.00000024586905, y: -0.0000022639276, z: 0.033996146, w: 0.99942195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftHandPinky3
+      parentName: Saiteo1_LeftHandPinky2
+      position: {x: -0.01920081, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.09509803, w: 0.9954679}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightShoulder
+      parentName: Saiteo1_Spine1
+      position: {x: 0.03740567, y: 0.19215213, z: -0.0021861866}
+      rotation: {x: 0.0423014, y: -0.0034196253, z: 0.04237313, w: 0.9982001}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightArm
+      parentName: Saiteo1_RightShoulder
+      position: {x: 0.14048754, y: 0, z: 0}
+      rotation: {x: 0.186695, y: -0.0042136447, z: -0.053296983, w: 0.9809621}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightForeArm
+      parentName: Saiteo1_RightArm
+      position: {x: 0.31586814, y: 0, z: 0}
+      rotation: {x: 0.15278137, y: -0.018557154, z: -0.0017641278, w: -0.9880842}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHand
+      parentName: Saiteo1_RightForeArm
+      position: {x: 0.2089966, y: 0.0023471415, z: 0.0034421682}
+      rotation: {x: 0.011253354, y: 0.120251305, z: -0.036592606, w: 0.99200505}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandThumb1
+      parentName: Saiteo1_RightHand
+      position: {x: 0.022881206, y: -0.026001373, z: 0.036401924}
+      rotation: {x: -0.038588837, y: -0.08358201, z: 0.08141801, w: 0.9924193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandThumb2
+      parentName: Saiteo1_RightHandThumb1
+      position: {x: 0.022080928, y: 0, z: 0.014400606}
+      rotation: {x: 0.00000042840838, y: -0.25819224, z: -0.00000007357448, w: 0.96609354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandThumb3
+      parentName: Saiteo1_RightHandThumb2
+      position: {x: 0.028801212, y: 0, z: 0}
+      rotation: {x: 0, y: 0.042103924, z: -0, w: 0.99911326}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandIndex1
+      parentName: Saiteo1_RightHand
+      position: {x: 0.09360495, y: 0, z: 0.036401924}
+      rotation: {x: -0.00066377776, y: -0.009198896, z: -0.06171927, w: 0.998051}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandIndex2
+      parentName: Saiteo1_RightHandIndex1
+      position: {x: 0.048002023, y: 0, z: 0}
+      rotation: {x: -0.00000013632227, y: 0.0000020312136, z: -0.03637937, w: 0.99933815}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandIndex3
+      parentName: Saiteo1_RightHandIndex2
+      position: {x: 0.024001012, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.07197305, w: 0.9974066}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandMiddle1
+      parentName: Saiteo1_RightHand
+      position: {x: 0.09360495, y: 0, z: 0.012064638}
+      rotation: {x: 0.00006445399, y: 0.0042465976, z: -0.04324292, w: 0.99905556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandMiddle2
+      parentName: Saiteo1_RightHandMiddle1
+      position: {x: 0.052802224, y: 0, z: 0}
+      rotation: {x: 0.000000033462122, y: 0.000000027474009, z: -0.038788315, w: 0.99924755}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandMiddle3
+      parentName: Saiteo1_RightHandMiddle2
+      position: {x: 0.028801212, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.048244935, w: 0.99883556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandRing1
+      parentName: Saiteo1_RightHand
+      position: {x: 0.08840467, y: 0, z: -0.012064638}
+      rotation: {x: 0.00012885343, y: 0.008489602, z: -0.014476199, w: 0.9998592}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandRing2
+      parentName: Saiteo1_RightHandRing1
+      position: {x: 0.048002023, y: 0, z: 0}
+      rotation: {x: 0.000000018844732, y: -0.000000204891, z: -0.041175935, w: 0.99915195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandRing3
+      parentName: Saiteo1_RightHandRing2
+      position: {x: 0.024001012, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.024489563, w: 0.99970007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandPinky1
+      parentName: Saiteo1_RightHand
+      position: {x: 0.08320439, y: 0, z: -0.036401924}
+      rotation: {x: 0.00019508974, y: 0.012853629, z: 0.015174791, w: 0.99980223}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandPinky2
+      parentName: Saiteo1_RightHandPinky1
+      position: {x: 0.03840162, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightHandPinky3
+      parentName: Saiteo1_RightHandPinky2
+      position: {x: 0.01920081, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftUpLeg
+      parentName: Saiteo1_Hips
+      position: {x: -0.09600405, y: 0, z: 0}
+      rotation: {x: -0.024835588, y: -0.05334393, z: -0.07937393, w: 0.9951067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftLeg
+      parentName: Saiteo1_LeftUpLeg
+      position: {x: -0, y: -0.38183787, z: 0}
+      rotation: {x: 0.13829668, y: -0.04055241, z: 0.049680214, w: 0.9883124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftFoot
+      parentName: Saiteo1_LeftLeg
+      position: {x: -0.001972258, y: -0.3823619, z: -0.00070017576}
+      rotation: {x: -0.10050666, y: 0.050832048, z: 0.010850098, w: 0.99357784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_LeftToeBase
+      parentName: Saiteo1_LeftFoot
+      position: {x: -0, y: -0.06240263, z: 0.14400607}
+      rotation: {x: 0.0048176944, y: 0.011572853, z: -0.005256258, w: 0.9999076}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightUpLeg
+      parentName: Saiteo1_Hips
+      position: {x: 0.09600405, y: 0, z: 0}
+      rotation: {x: 0.011046586, y: -0.012647533, z: 0.056823764, w: 0.99824303}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightLeg
+      parentName: Saiteo1_RightUpLeg
+      position: {x: -0, y: -0.38183787, z: 0}
+      rotation: {x: -0.010093249, y: -0.010423014, z: -0.038292088, w: 0.99916124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightFoot
+      parentName: Saiteo1_RightLeg
+      position: {x: 0.001003772, y: -0.38068095, z: -0.001157403}
+      rotation: {x: 0.000993058, y: 0.01695014, z: -0.05517169, w: 0.9983325}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saiteo1_RightToeBase
+      parentName: Saiteo1_RightFoot
+      position: {x: -0, y: -0.06240263, z: 0.14400607}
+      rotation: {x: 0.018251032, y: -0.01794319, z: 0.004712148, w: 0.9996613}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
