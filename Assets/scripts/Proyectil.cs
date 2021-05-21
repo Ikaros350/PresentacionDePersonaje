@@ -11,12 +11,16 @@ public class Proyectil : MonoBehaviour
     [SerializeField] ParticleSystem proyectile;
     Collider col;
     Transform player;
+    AudioController audioController;
+    bool active;
     // Start is called before the first frame update
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Target").GetComponent<Transform>();
         col = GetComponent<Collider>();
         myrig = GetComponent<Rigidbody>();
+        audioController = GetComponent<AudioController>();
+        active = true;
     }
     private void Start()
     {
@@ -25,6 +29,15 @@ public class Proyectil : MonoBehaviour
             player.transform.position.z - transform.position.z).normalized;
         transform.LookAt(player);
         myrig.AddForce(dir * speed);
+        if (active)
+        {
+            audioController.PlayLoop(1);
+        }
+    }
+
+    private void Update()
+    {
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -33,6 +46,9 @@ public class Proyectil : MonoBehaviour
         col.enabled = false;
         myrig.velocity = dir * 0f;
         proyectile.gameObject.SetActive(false);
+        active = false;
+        audioController.Stop();
+        audioController.PlayAction(0);
         Invoke("Destruction", 9f);
     }
 

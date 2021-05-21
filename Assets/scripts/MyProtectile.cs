@@ -7,11 +7,12 @@ public class MyProtectile : MonoBehaviour
     Rigidbody myrig;
     Vector3 dir;
     [SerializeField] float speed, destructiontime;
+    AudioController audioController;
     private void Awake()
     {
         myrig = GetComponent<Rigidbody>();
         dir = transform.forward;
-        Invoke("Destruction", destructiontime);
+        audioController = GetComponent<AudioController>();
     }
 
 
@@ -19,6 +20,8 @@ public class MyProtectile : MonoBehaviour
     void Start()
     {
         myrig.AddForce(dir * speed);
+        audioController.PlayLoop(0);
+        Invoke("Destruction", destructiontime);
     }
 
     private void Destruction()
