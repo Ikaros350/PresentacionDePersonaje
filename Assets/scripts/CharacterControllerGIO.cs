@@ -3,8 +3,8 @@
 public class CharacterControllerGIO : MonoBehaviour
 {
     Animator anim;
-    [SerializeField] Transform shootPos, shieldPosition;
-    [SerializeField] GameObject fireProyectile, iceProyectile;
+    [SerializeField] Transform shootPos, shieldPosition, myProyectilePos;
+    [SerializeField] GameObject fireProyectile, iceProyectile, myProyectile;
     bool frozen;
     Vector3 originalPos;
     Quaternion originalRot;
@@ -34,7 +34,6 @@ public class CharacterControllerGIO : MonoBehaviour
         RestorePosition();
         if (Input.GetKeyDown("e") && shieldTime >= shieldCooldown && !frozen)
         {
-
             shieldActualPosition.position = shieldPosition.position;
             Shield();
             shieldTime = 0;
@@ -68,6 +67,12 @@ public class CharacterControllerGIO : MonoBehaviour
     {
         anim.SetTrigger("Shield");
         shieldControl.CanUseShield(true);
+        Invoke("ShootMyProyectile", 6f);
+    }
+
+    void ShootMyProyectile()
+    {
+        GameObject gameObject = Instantiate(myProyectile, myProyectilePos.position, myProyectilePos.rotation);
     }
 
     private void OnCollisionEnter(Collision collision)

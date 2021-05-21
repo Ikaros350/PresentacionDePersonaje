@@ -71,6 +71,7 @@ public class RotateControl : MonoBehaviour
         {
             myRend.material.color = new Color(prevColor.r, prevColor.g, prevColor.b, alpha);
         }
+
         if (t > shieldColldown)
         {
             usingShield = false;

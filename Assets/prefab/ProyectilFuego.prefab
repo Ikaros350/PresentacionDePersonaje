@@ -4861,6 +4861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   r0: 0.5
   w: -5
+  fuego: 0
 --- !u!1 &2086581184562668249
 GameObject:
   m_ObjectHideFlags: 0
@@ -14389,7 +14390,6 @@ GameObject:
   - component: {fileID: 2086581184969456434}
   - component: {fileID: 2086581184969456433}
   - component: {fileID: 2086581184969456432}
-  - component: {fileID: 2086581184969456435}
   m_Layer: 0
   m_Name: ProyectilFuego
   m_TagString: Untagged
@@ -19140,19 +19140,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!65 &2086581184969456435
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086581184969456431}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0302205, y: 0.9774101, z: 1.0242252}
-  m_Center: {x: -0.0029983574, y: 0.0054173353, z: 0}
 --- !u!1 &2086581185199281462
 GameObject:
   m_ObjectHideFlags: 0
@@ -23922,6 +23909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   r0: 0.5
   w: 5
+  fuego: 0
 --- !u!1 &2086581185241314084
 GameObject:
   m_ObjectHideFlags: 0
