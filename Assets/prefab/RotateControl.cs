@@ -23,6 +23,7 @@ public class RotateControl : MonoBehaviour
     [SerializeField] Transform ball;
     Collider shieldCol;
     [SerializeField] bool usingShield;
+    AudioController audioController;
 
     void Awake()
     {
@@ -37,6 +38,7 @@ public class RotateControl : MonoBehaviour
         shieldCol = ball.GetComponent<Collider>();
         prevColor = myRend.material.color;
         myRend.material.color = new Color(prevColor.r, prevColor.g, prevColor.b, 0f);
+        audioController = GetComponent<AudioController>();
         t = 0;
     }
 
@@ -89,6 +91,7 @@ public class RotateControl : MonoBehaviour
         {
             t = 0;
             shieldCol.enabled = true;
+            audioController.PlayAction(0);
         }
     }
 

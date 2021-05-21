@@ -32,7 +32,7 @@ public class CharacterControllerGIO : MonoBehaviour
         shieldTime += Time.deltaTime;
         Shoot();
         RestorePosition();
-        if (Input.GetKeyDown("e") && shieldTime >= shieldCooldown && !frozen)
+        if (Input.GetKeyDown("e") && shieldTime >= shieldCooldown && !frozen && shootTime>=shootCooldown+2f)
         {
             shieldActualPosition.position = shieldPosition.position;
             Shield();
