@@ -26,11 +26,7 @@ public class Frozen : MonoBehaviour
          
       
 
-        if (Input.GetButtonDown("Fire1") && !getFrezze)
-        {
-            getFrezze = true;
-            ambient.Play();
-        }
+        
        //else if (Input.GetButtonDown("Fire1") && getFrezze)
        // {
        //     getFrezze = false;

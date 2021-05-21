@@ -5,9 +5,7 @@ using UnityEngine;
 public class RotateControl : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] AnimationCurve myCurve;
     [SerializeField] AnimationCurve orbitalCurve;
-    [SerializeField] AnimationCurve textureCurve;
     [SerializeField] AnimationCurve emisionCurve;
     Light pointlight;
     Renderer myRend;
@@ -18,6 +16,7 @@ public class RotateControl : MonoBehaviour
    [SerializeField] ParticleSystem particleAshes;
     ParticleSystem.VelocityOverLifetimeModule velOverlifeTime;
     ParticleSystem.EmissionModule emisionModule;
+    ParticleSystem.EmissionModule emisionAshesModule;
     ParticleSystem.MainModule mainModuleSkull;
     ParticleSystem.MainModule mainModuleAshes;
     float xOrbitalSpeed, orbitalTextureSpeed;
@@ -34,9 +33,11 @@ public class RotateControl : MonoBehaviour
         mainModuleAshes = particleAshes.main;
         mainModuleSkull = particleSkull.main;
         emisionModule = particleSkull.emission;
+        emisionAshesModule = particleAshes.emission;
         shieldCol = ball.GetComponent<Collider>();
         prevColor = myRend.material.color;
         myRend.material.color = new Color(prevColor.r, prevColor.g, prevColor.b, 0f);
+        t = 0;
     }
 
     // Update is called once per frame
@@ -56,15 +57,16 @@ public class RotateControl : MonoBehaviour
             particleSkull.Play();
         }
         
-        float y = myCurve.Evaluate(t / duration);
+        float y = orbitalCurve.Evaluate(t / duration);
         myRend.material.color = new Color(prevColor.r, prevColor.g, prevColor.b, y * alpha);
         xOrbitalSpeed = orbitalCurve.Evaluate(t / duration) * maxOrbitalSpeed;
-        orbitalTextureSpeed = myCurve.Evaluate(t / duration);
+        orbitalTextureSpeed = orbitalCurve.Evaluate(t / duration);
         velOverlifeTime.orbitalY = xOrbitalSpeed;
-        mainModuleSkull.startSize = myCurve.Evaluate(t / duration) * 0.2f;
-        mainModuleAshes.startSize = myCurve.Evaluate(t / duration) * 0.2f;
+        mainModuleSkull.startSize = (0.4f + orbitalCurve.Evaluate(t / duration)) * 0.15f;
+        mainModuleAshes.startSize = (0.4f + orbitalCurve.Evaluate(t / duration)) * 0.1f;
 
         emisionModule.rateOverTime = emisionCurve.Evaluate(t / duration) * maxEmision;
+        emisionAshesModule.rateOverTime = emisionCurve.Evaluate(t / duration) * maxEmision;
         ball.RotateAround(transform.position, Vector3.down, orbitalTextureSpeed * -speed * Time.deltaTime);
         pointlight.intensity = y * intesity;
         if (y > alpha)
