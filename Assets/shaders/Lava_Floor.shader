@@ -10,6 +10,7 @@ Shader "Custom/Lava_Floor"
 		_Color("Tint", Color) = (1,1,1,1)
 		[HDR] _Emission("Emission", Color) = (1,1,1,1)
 		_Factor("Factor",Range(1,2))= 1
+		_Alphe("Factor",Range(0,1)) = 1
 	}
 
 	SubShader
