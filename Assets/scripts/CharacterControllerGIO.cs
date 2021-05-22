@@ -66,7 +66,7 @@ public class CharacterControllerGIO : MonoBehaviour
     void Shield()
     {
         anim.SetTrigger("Shield");
-        shieldControl.CanUseShield(true);
+        shieldControl.CanUseShield();
         Invoke("ShootMyProyectile", 6f);
     }
 

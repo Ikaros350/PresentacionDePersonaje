@@ -84,9 +84,9 @@ public class RotateControl : MonoBehaviour
         }
     }
 
-    public void CanUseShield(bool use)
+    public void CanUseShield()
     {
-        usingShield = use;
+        usingShield = true;
         if (usingShield)
         {
             t = 0;
