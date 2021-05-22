@@ -1,5 +1,55 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1937189918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1936764990}
+  - component: {fileID: 1942175452}
+  m_Layer: 0
+  m_Name: Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1936764990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937189918}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.51}
+  m_Children: []
+  m_Father: {fileID: 8478137620877357532}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!119 &1942175452
+Projector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937189918}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_NearClipPlane: 0.1
+  m_FarClipPlane: 4.62
+  m_FieldOfView: 30
+  m_AspectRatio: 1
+  m_Orthographic: 1
+  m_OrthographicSize: 3
+  m_Material: {fileID: 2100000, guid: 24d4753cec369fb47af6468dee9d4be0, type: 2}
+  m_IgnoreLayers:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &3977322120837840895
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +352,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -14405,6 +14455,7 @@ Transform:
   - {fileID: 3306534154832450264}
   - {fileID: 8478137620474959285}
   - {fileID: 8478137620233640430}
+  - {fileID: 1936764990}
   m_Father: {fileID: 8478137620940011210}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14424,6 +14475,7 @@ MonoBehaviour:
   ps2: {fileID: 8478137620474959284}
   light: {fileID: 8478137620233640431}
   complement: {fileID: 0}
+  floor: {fileID: 1942175452}
   play: 0
   state: 0
   explosionCurve:
@@ -14432,17 +14484,17 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 9.938346
-      outSlope: 9.938346
+      inSlope: 19.876692
+      outSlope: 19.876692
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.1
+      time: 0.05
       value: 0.9938346
-      inSlope: 9.938346
-      outSlope: -0.0017167049
+      inSlope: 19.876692
+      outSlope: -0.001567446
       tangentMode: 69
       weightedMode: 0
       inWeight: 0.33333334
@@ -14450,7 +14502,7 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0.6250763
       value: 0.9929332
-      inSlope: -0.0017167049
+      inSlope: -0.001567446
       outSlope: -2.676952
       tangentMode: 69
       weightedMode: 0
@@ -14603,6 +14655,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  floorSize: 3
   explosionDuration: 0.5
   rainDuration: 5
   ExplosionMaxParticles: 50
@@ -14637,7 +14690,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 3
-  psMaterialSnow: {fileID: 2100000, guid: 3258106395fe2b44e8d106946a16247d, type: 2}
+  psMaterialSnow: {fileID: 2100000, guid: 32178079429733b4b8bfc9f887426831, type: 2}
+  iceFloor: {fileID: 2100000, guid: c8c80c5b03f5c7e40b07eb2170e667e5, type: 2}
   colorSmoke: {r: 0.8962264, g: 0.29761216, b: 0.18178178, a: 0.5686275}
   colorFire:
     serializedVersion: 2
@@ -14668,7 +14722,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 3
-  psMaterialCarbon: {fileID: 2100000, guid: 32178079429733b4b8bfc9f887426831, type: 2}
+  psMaterialCarbon: {fileID: 2100000, guid: 8fc5aedb1a95ed7469a58df196837a8b, type: 2}
+  lavaFloor: {fileID: 2100000, guid: 24d4753cec369fb47af6468dee9d4be0, type: 2}
 --- !u!82 &8478137620877357533
 AudioSource:
   m_ObjectHideFlags: 0

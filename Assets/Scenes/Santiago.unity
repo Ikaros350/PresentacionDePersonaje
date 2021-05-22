@@ -132,12 +132,12 @@ GameObject:
   - component: {fileID: 303785652}
   - component: {fileID: 303785651}
   m_Layer: 0
-  m_Name: Ice
+  m_Name: FloorMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!119 &303785651
 Projector:
   m_ObjectHideFlags: 0
@@ -147,9 +147,9 @@ Projector:
   m_GameObject: {fileID: 303785650}
   m_Enabled: 1
   serializedVersion: 2
-  m_NearClipPlane: 0.1
-  m_FarClipPlane: 4.62
-  m_FieldOfView: 30
+  m_NearClipPlane: -0.69
+  m_FarClipPlane: 5
+  m_FieldOfView: 30.73
   m_AspectRatio: 1
   m_Orthographic: 1
   m_OrthographicSize: 3
@@ -164,12 +164,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303785650}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.03, y: 3.28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.51}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -5.16, y: 1.6024071, z: -2.43}
+  m_LocalScale: {x: 1, y: 1, z: 0.5100001}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -680,56 +680,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 834339019}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1936764990
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937189918}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.04, y: 3.28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.51}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1937189918
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1936764990}
-  - component: {fileID: 1942175452}
-  m_Layer: 0
-  m_Name: 'Lava '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!119 &1942175452
-Projector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937189918}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_NearClipPlane: 0.1
-  m_FarClipPlane: 4.62
-  m_FieldOfView: 30
-  m_AspectRatio: 1
-  m_Orthographic: 1
-  m_OrthographicSize: 3
-  m_Material: {fileID: 2100000, guid: 24d4753cec369fb47af6468dee9d4be0, type: 2}
-  m_IgnoreLayers:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!198 &2082910619 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5095796699686224243, guid: b479f0622e8e6e844a03ab0f4aa20ed1,
@@ -1004,7 +954,7 @@ GameObject:
   - component: {fileID: 1386626494}
   m_Layer: 8
   m_Name: nightshade_j_friedrich
-  m_TagString: Player
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2916,6 +2866,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 52990337, guid: c43107d5c0e06ea41825f604c9437dd9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 52990338, guid: c43107d5c0e06ea41825f604c9437dd9, type: 3}
+      propertyPath: m_NearClipPlane
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8352760154468386981, guid: c43107d5c0e06ea41825f604c9437dd9,
         type: 3}
       propertyPath: m_RootOrder
@@ -2971,11 +2929,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8352760154468387000, guid: c43107d5c0e06ea41825f604c9437dd9,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1022740820}
     - target: {fileID: 8352760154468387001, guid: c43107d5c0e06ea41825f604c9437dd9,
         type: 3}
       propertyPath: m_Name
@@ -2984,7 +2937,7 @@ PrefabInstance:
     - target: {fileID: 8352760154468387001, guid: c43107d5c0e06ea41825f604c9437dd9,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c43107d5c0e06ea41825f604c9437dd9, type: 3}
@@ -2995,40 +2948,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1643511505899921454, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: moveWithTransform
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2085734118754627892, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: moveWithTransform
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7568467217705367429, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344365141746940748, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 8344365141746940748, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 8348166568694595701, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 8348166568694595701, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.45
+    - target: {fileID: 1942175452, guid: 1006a6e8f6fd45d41b34c94374fc2cf2, type: 3}
+      propertyPath: m_NearClipPlane
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8478137620940011210, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
         type: 3}
@@ -3085,20 +3007,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8478137620940011211, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1022740820}
     - target: {fileID: 8478137620940011223, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
         type: 3}
       propertyPath: m_Name
       value: Proyectil Hielo
-      objectReference: {fileID: 0}
-    - target: {fileID: 8478137620940011223, guid: 1006a6e8f6fd45d41b34c94374fc2cf2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1006a6e8f6fd45d41b34c94374fc2cf2, type: 3}

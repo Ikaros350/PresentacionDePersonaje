@@ -9,24 +9,25 @@ public class ExplosionEffects : MonoBehaviour
     [SerializeField] ParticleSystem ps2;
     [SerializeField] Light light;
     [SerializeField] ParticleSystem complement;
+    [SerializeField] Projector floor;
     [SerializeField] bool play = true;
     [SerializeField] int state = 0;
     [SerializeField] AnimationCurve explosionCurve;
     [SerializeField] AnimationCurve RainCurve;
     [SerializeField] AnimationCurve ComplementCurve;
     [SerializeField] AnimationCurve ComplementEmissionCurve;
-    [SerializeField] float explosionDuration, rainDuration, ExplosionMaxParticles, RainMaxParticles;
+    [SerializeField] float floorSize, explosionDuration, rainDuration, ExplosionMaxParticles, RainMaxParticles;
     [Header("Ice effect")]
     [SerializeField] Color colorIce;
     [SerializeField] Gradient colorSnow;
     [SerializeField] Material psMaterialSnow;
+    [SerializeField] Material iceFloor;  
 
     [Header("FireEffect")]
     [SerializeField] Color colorSmoke;
     [SerializeField] Gradient colorFire;
     [SerializeField] Material psMaterialCarbon;
-
-    
+    [SerializeField] Material lavaFloor;
 
     ParticleSystem.MainModule ps1Main;
     ParticleSystem.EmissionModule ps1Emission;
@@ -37,6 +38,9 @@ public class ExplosionEffects : MonoBehaviour
     ParticleSystem.MainModule complementMain;
     ParticleSystem.EmissionModule complementEmission;
     ParticleSystem.ShapeModule complementShape;
+
+    ParticleSystem.TextureSheetAnimationModule complementAnimation;
+
     ParticleSystemRenderer material;
 
     AudioSource mySource;
@@ -46,6 +50,7 @@ public class ExplosionEffects : MonoBehaviour
     float timeExplosion=0;
     float timeRain = 0;
 
+
     public bool Play { get => play; set => play = value; }
 
     void Awake()
@@ -53,7 +58,7 @@ public class ExplosionEffects : MonoBehaviour
         mySource = GetComponent<AudioSource>();
         complement = ps2.transform.GetChild(0).GetComponent<ParticleSystem>();
         material = complement.GetComponent<ParticleSystemRenderer>();
-        
+        floor.orthographicSize = floorSize;
         ps1Main = ps1.main;
         ps2Main = ps2.main;
         complementMain = complement.main;
@@ -62,8 +67,7 @@ public class ExplosionEffects : MonoBehaviour
         ps2Emission = ps2.emission;
         complementEmission = complement.emission;
 
-      
-
+        complementAnimation = complement.textureSheetAnimation;
         complementShape = complement.shape;
         complementShape = complement.shape;
         ps1Main.startLifetime= explosionDuration;
@@ -91,6 +95,8 @@ public class ExplosionEffects : MonoBehaviour
         if (play)
         {
             light.intensity = y;
+            floor.material.SetFloat("_Alpha", y);
+            floor.material.SetFloat("_Factor", z);
             if (state == 0)
             {
                 //light.intensity = z;
@@ -105,6 +111,7 @@ public class ExplosionEffects : MonoBehaviour
                 }
                 if (timeExplosion >= explosionDuration+0.1f)
                 {
+                    floor.gameObject.SetActive(true);
                     timeExplosion = 0;
                     complementShape.radius = 2;
                     state = 1;
@@ -119,6 +126,7 @@ public class ExplosionEffects : MonoBehaviour
             */
             mySource.volume = y;
             y = RainCurve.Evaluate(timeRain /( rainDuration + ps2Main.startLifetime.constant));
+            z = 0.5f * Mathf.Sin(((2f * Mathf.PI / 1.5f) * timeRain) - (Mathf.PI / 2f)) + 0.5f;
             timeRain += Time.deltaTime;
             if (timeRain >= rainDuration + ps2Main.startLifetime.constant)
             {
@@ -131,9 +139,13 @@ public class ExplosionEffects : MonoBehaviour
     {
         ps1Main.startColor = colorSmoke;
         ps2Main.startColor = colorFire;
+        complementAnimation.enabled = true;
+        complementAnimation.numTilesX = 5;
+        complementAnimation.numTilesY = 6;
         complementMain.startColor = colorSmoke;
         light.color = colorSmoke;
         material.material = psMaterialCarbon;
+        floor.material = lavaFloor;
     }
     void Ice()
     {
@@ -142,6 +154,6 @@ public class ExplosionEffects : MonoBehaviour
         complementMain.startColor = colorIce;
         light.color = colorIce;
         material.material = psMaterialSnow;
-
+        floor.material = iceFloor;
     }
 }

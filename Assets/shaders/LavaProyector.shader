@@ -6,7 +6,7 @@
         _ShadowTex("Superficie", 2D) = "gray" {}
         _Textura("Main Textura", 2D) = "white" {}
         _Mask("Mask Line", 2D) = "white" {}
-        _Factor("Factor",Range(1,2)) = 1
+        _Factor("Factor",Range(0,1)) = 0
         
     }
         Subshader{
@@ -74,8 +74,8 @@
                     float4 alpha = float4(0, 0, 0, 0);
 
                     //output.rgb = lerp(combinacion.rgb,_Emission.rgb, maskBloom.x);
-                    output.rgb = (combinacionMain.rgb * _Factor + combinacionMain2.rgb);
-                    float4 output2 = lerp(alpha, output , _Alpha/2);
+                    output.rgb = (combinacionMain.rgb * (_Factor + 1)+ combinacionMain2.rgb);
+                    float4 output2 = lerp(alpha, output , _Alpha*0.5);
                     return output2;
                 }
                 ENDCG
