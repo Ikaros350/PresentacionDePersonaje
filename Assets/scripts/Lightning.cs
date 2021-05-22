@@ -8,22 +8,26 @@ public class Lightning : MonoBehaviour
     [SerializeField] float maxDuration;
     [SerializeField] AnimationCurve myCurve;
     [SerializeField] AudioClip storm, thunder, electricity;
-    [SerializeField] ParticleSystem lightningStorm, thunderbolt, powerAura;
+    [SerializeField] ParticleSystem lightningStorm, thunderbolt, powerAura, rain;
     [SerializeField] Light myLight;
 
-    float time, y, count; 
-    AudioSource mySource;
+    float time, y, count, lightningTime; 
+    AudioSource mySource, rainSource;
     Animator myAnimator;
+
+    bool active;
 
     ParticleSystem.EmissionModule stormEM;
 
     public void Awake()
     {
         mySource = GetComponent<AudioSource>();
+        rainSource = rain.gameObject.GetComponent<AudioSource>();
+        rainSource.Stop();
         myAnimator = GetComponent<Animator>();
-        time = 0;
+        time = 5;
         count = 0;
-
+        active = false;
         stormEM = lightningStorm.emission;
         stormEM.rateOverTime = new ParticleSystem.MinMaxCurve(10, myCurve);
 
@@ -33,9 +37,10 @@ public class Lightning : MonoBehaviour
 
     public void Update()
     {
+        time += Time.deltaTime;
         if (time < maxDuration && state != 0)
         {
-            time += Time.deltaTime;
+            
             mySource.volume = y;
         }
 
@@ -66,8 +71,7 @@ public class Lightning : MonoBehaviour
 
     public void RunEffect()
     {
-        myAnimator.SetBool("IsCharging", false);
-        if (Input.GetButtonDown("Fire1"))
+        if (active)
         {
             count = 0;
             time = 0;
@@ -79,6 +83,11 @@ public class Lightning : MonoBehaviour
     public void StartEffect()
     {
         powerAura.Stop();
+        if (rain.isStopped)
+        {
+            rain.Play();
+            rainSource.Play();
+        }
         mySource.clip = storm;
 
         if (!mySource.isPlaying)
@@ -109,7 +118,11 @@ public class Lightning : MonoBehaviour
     public void EndEffect()
     {
         mySource.clip = electricity;
-
+        if (rain.isPlaying)
+        {
+            rain.Stop();
+            rainSource.Stop();
+        }
         if (!mySource.isPlaying)
             mySource.Play();
 
@@ -117,7 +130,30 @@ public class Lightning : MonoBehaviour
 
         powerAura.Play();
 
-        if (time >= 5)
+        if (time >= 5f)
+        {
+            myAnimator.SetBool("IsCharging", false);
+        }
+
+        if (time >= lightningTime)
+        {
             state = 0;
+            powerAura.Stop();
+            mySource.Stop();
+        }
+            
     }
+
+    public void Active( float i)
+    {
+        lightningTime = i;
+        active = true;
+        Invoke("UnActive", 1f);
+    }
+
+    void UnActive()
+    {
+        active = false;
+    }
+
 }
