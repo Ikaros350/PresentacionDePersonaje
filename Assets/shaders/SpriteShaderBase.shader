@@ -6,7 +6,8 @@ Shader "Custom/SpriteShaderBase"
 	{
 		_MainTex("Sprite texture", 2D) = "white" {}
 		_Mask("Mask texture", 2D) = "white" {}
-		_MaskBloom("Mask bloom", 2D) = "white" {}
+		_MaskTextura("Main Textura", 2D) = "white" {}
+		_MaskBloom("Mask Line", 2D) = "white" {}
 		_Color("Tint", Color) = (1,1,1,1)
 		[HDR] _Emission("Emission", Color) = (1,1,1,1)
 		_Factor("Factor",Range(0,1))= 0
