@@ -151,6 +151,13 @@ public class Lightning : MonoBehaviour
         Invoke("UnActive", 1f);
     }
 
+    public void ActiveTwo()
+    {
+        lightningTime = 10;
+        active = true;
+        Invoke("UnActive", 1f);
+    }
+
     void UnActive()
     {
         active = false;
