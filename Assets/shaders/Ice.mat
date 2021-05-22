@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LightProjector
+  m_Name: Ice
   m_Shader: {fileID: 4800000, guid: e1a49008d7c2ead4d97108cefd4d1304, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask:
-        m_Texture: {fileID: 2800000, guid: 8242bf9290a671a47987b9fa471654de, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2ea1ebe6fbc1dbe4ca1ad558ca3d25a2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskBloom:
@@ -52,16 +52,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTex:
-        m_Texture: {fileID: 2800000, guid: 4387dbc68568d584783e5b39401d6a2f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3635946a6d4b31a46b92468eba0962a9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Textura:
-        m_Texture: {fileID: 2800000, guid: 749aec569acaf5f41b2c981ed8324570, type: 3}
+        m_Texture: {fileID: 2800000, guid: f5f1687b05eff2e44a5b946e9ceaed4b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Alpha: 1
-    - _Factor: 2
+    - _Alpha: 0.5
+    - _Factor: 1.819
     m_Colors:
     - BumpMapScale: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

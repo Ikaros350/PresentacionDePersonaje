@@ -1,4 +1,4 @@
-﻿Shader "Custom/Proyector_Ice" 
+﻿Shader "Custom/Proyector" 
 {
 	Properties{
 		[HDR] _Emission("Emission", Color) = (1,1,1,1)

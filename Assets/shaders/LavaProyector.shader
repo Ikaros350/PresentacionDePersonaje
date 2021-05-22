@@ -1,4 +1,4 @@
-﻿Shader "Custom/LavaProyector"
+﻿Shader "Custom/ProyectorGenerico"
 {
     Properties{
         [HDR]_Color("Emission", Color) = (1,1,1,1)
@@ -75,7 +75,7 @@
 
                     //output.rgb = lerp(combinacion.rgb,_Emission.rgb, maskBloom.x);
                     output.rgb = (combinacionMain.rgb * _Factor + combinacionMain2.rgb);
-                    float4 output2 = lerp(alpha, output , _Alpha);
+                    float4 output2 = lerp(alpha, output , _Alpha/2);
                     return output2;
                 }
                 ENDCG
