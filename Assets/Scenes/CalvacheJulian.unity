@@ -5498,6 +5498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe255308d3edbbb4c9a2da99b1d37f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myRender: {fileID: 6420742163729392849}
   speedAnim: 0
   valueText: 0
   valueSpeed: 0
@@ -5648,6 +5649,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4278880410125356650, guid: b148d298e93ba1948a600508048a0037,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4278880412223831320, guid: b148d298e93ba1948a600508048a0037,
         type: 3}
       propertyPath: m_RootOrder

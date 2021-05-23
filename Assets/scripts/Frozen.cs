@@ -5,7 +5,7 @@ using UnityEngine;
 public class Frozen : MonoBehaviour
 {
     Animator myAnim;
-    Renderer myRender;
+    [SerializeField] Renderer myRender;
     [SerializeField] float speedAnim, valueText, valueSpeed,time;
     [SerializeField] bool getFrezze;
     [SerializeField] ParticleSystem frezee;
@@ -15,7 +15,6 @@ public class Frozen : MonoBehaviour
     void Start()
     {
         myAnim = GetComponent<Animator>();
-        myRender = GetComponentInChildren<Renderer>();
         speedAnim = myAnim.speed;
         getFrezze = false;
     }
@@ -67,10 +66,13 @@ public class Frozen : MonoBehaviour
     {
         setFloat("_Factor", 0);
         myAnim.speed = speedAnim;
-        frezee.Play();
+        if (getFrezze)
+        {
+            frezee.Play();
+        }
         ambient.Stop();
         time = 0;
-
+        getFrezze = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -78,7 +80,7 @@ public class Frozen : MonoBehaviour
         if (collision.gameObject.CompareTag("Fire"))
         {
             exitFrozen();
-            getFrezze = false;
+            
         }
         if (collision.gameObject.CompareTag("Ice"))
         {
