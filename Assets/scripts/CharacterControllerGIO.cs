@@ -47,6 +47,10 @@ public class CharacterControllerGIO : MonoBehaviour
             thunderTime = 0f;
             thunder.Active(lightningCooldown);
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void Shoot()
