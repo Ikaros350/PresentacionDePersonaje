@@ -42,7 +42,7 @@ public class Frozen : MonoBehaviour
             valueText = Mathf.Lerp(0, 1, time);
             valueSpeed = Mathf.Lerp(speedAnim, 0, time);
             //setFloat("_Factor", valueText);
-           getFrozen(valueText, valueSpeed);
+            getFrozen(valueText, valueSpeed);
         }
         /*else
         {
