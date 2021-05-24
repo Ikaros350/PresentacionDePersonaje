@@ -7633,7 +7633,7 @@ MonoBehaviour:
     type: 3}
   myProyectile: {fileID: 7711388969931632085, guid: 799206628e7e1da4dbed5b833159eb5f,
     type: 3}
-  shootCooldown: 3
+  shootCooldown: 4
   shieldCooldown: 8
   lightningCooldown: 10
   thunderCooldown: 5
