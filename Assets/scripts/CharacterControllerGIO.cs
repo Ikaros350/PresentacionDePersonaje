@@ -34,58 +34,75 @@ public class CharacterControllerGIO : MonoBehaviour
         shootTime += Time.deltaTime;
         shieldTime += Time.deltaTime;
         thunderTime += Time.deltaTime;
-        Shoot();
+        /*ShootFire();
+        ShootIce();
         RestorePosition();
-        if (Input.GetKeyDown("e") && shieldTime >= shieldCooldown && !frozen && shootTime>=shootCooldown+2f && thunderTime >= thunderCooldown)
-        {
-            shieldActualPosition.position = shieldPosition.position;
-            Shield();
-            shieldTime = 0;
-        }
-        if (Input.GetKeyDown("t") && thunderTime >= thunderCooldown && shieldTime >= shieldCooldown && shootTime >= shootCooldown + 2f)
-        {
-            thunderTime = 0f;
-            thunder.Active(lightningCooldown);
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+        Shield();
+        Thunder();
+        Exit();*/
     }
 
-    void Shoot()
+    public void ShootFire()
     {
-        if (Input.GetKeyDown("f") && shootTime >= shootCooldown && thunderTime >= thunderCooldown)
+        if (/*Input.GetKeyDown("f") &&*/ shootTime >= shootCooldown && thunderTime >= thunderCooldown)
         {
             GameObject gameObject = Instantiate(fireProyectile, shootPos.position, Quaternion.identity);
             shootTime = 0;
         }
-        if (Input.GetKeyDown("h") && shootTime >= shootCooldown && thunderTime >= thunderCooldown)
+        
+    }
+
+    public void ShootIce()
+    {
+        if (/*Input.GetKeyDown("h") &&*/ shootTime >= shootCooldown && thunderTime >= thunderCooldown)
         {
             GameObject gameObject = Instantiate(iceProyectile, shootPos.position, Quaternion.identity);
             shootTime = 0;
         }
     }
 
-    void RestorePosition()
+    public void RestorePosition()
     {
-        if (Input.GetKeyDown("r"))
-        {
+        //if (Input.GetKeyDown("r"))
+        //{
             transform.position = originalPos;
             transform.rotation = originalRot;
-        }
+        //}
     }
 
-    void Shield()
+    public void Shield()
     {
-        anim.SetTrigger("Shield");
-        shieldControl.CanUseShield();
-        Invoke("ShootMyProyectile", 6f);
+        if (/*Input.GetKeyDown("e") &&*/ shieldTime >= shieldCooldown && !frozen && shootTime >= shootCooldown + 2f && thunderTime >= thunderCooldown)
+        {
+            shieldActualPosition.position = shieldPosition.position;
+            anim.SetTrigger("Shield");
+            shieldControl.CanUseShield();
+            shieldTime = 0;
+            Invoke("ShootMyProyectile", 6f);
+        }  
+    }
+
+    public void Thunder()
+    {
+        if (/*Input.GetKeyDown("t") &&*/ thunderTime >= thunderCooldown && shieldTime >= shieldCooldown && shootTime >= shootCooldown + 2f)
+        {
+            thunderTime = 0f;
+            thunder.Active(lightningCooldown);
+        }
+            
     }
 
     void ShootMyProyectile()
     {
         GameObject gameObject = Instantiate(myProyectile, myProyectilePos.position, myProyectilePos.rotation);
+    }
+
+    public void Exit()
+    {
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+            Application.Quit();
+        //} 
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -61,7 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Alpha: 0
-    - _Factor: 0.00031474233
+    - _Factor: 0.00043842196
     m_Colors:
     - BumpMapScale: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
