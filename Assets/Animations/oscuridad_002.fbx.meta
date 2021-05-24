@@ -1,0 +1,804 @@
+fileFormatVersion: 2
+guid: e971a000fcc258249a0a3facf844e5ad
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -2264796339807385916
+    second: oscuridad_002
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'oscuridad_002' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'AlexanderGomez_Spine1' has translation
+      animation that will be discarded.\n\t'AlexanderGomez_LeftHand' has translation
+      animation that will be discarded.\n\t'AlexanderGomez_RightHand' has translation
+      animation that will be discarded.\n\t'AlexanderGomez_LeftFoot' has translation
+      animation that will be discarded.\n\t'AlexanderGomez_RightFoot' has translation
+      animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: oscuridad_002
+      takeName: oscuridad_002
+      internalID: 0
+      firstFrame: 367
+      lastFrame: 863
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: AlexanderGomez_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: AlexanderGomez_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: oscuridad_002(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_Hips
+      parentName: oscuridad_002(Clone)
+      position: {x: 0, y: 0.8317712, z: 0}
+      rotation: {x: 0.008738991, y: 0.010690675, z: -0.02975391, w: 0.99946195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_Spine
+      parentName: AlexanderGomez_Hips
+      position: {x: -0, y: 0.07428529, z: 0}
+      rotation: {x: -0.078355104, y: -0.046344336, z: 0.04628099, w: 0.9947717}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_Spine1
+      parentName: AlexanderGomez_Spine
+      position: {x: 0.0000046789646, y: 0.17039752, z: 0.0000034570694}
+      rotation: {x: 0.088501066, y: -0.015535846, z: -0.023212047, w: 0.99568444}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_Neck
+      parentName: AlexanderGomez_Spine1
+      position: {x: -0, y: 0.20160219, z: 0}
+      rotation: {x: 0.08950972, y: -0.018153727, z: -0.0018168116, w: 0.99581885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_Head
+      parentName: AlexanderGomez_Neck
+      position: {x: -0, y: 0.14041731, z: 0.018118363}
+      rotation: {x: 0.12138925, y: -0.018424934, z: -0.004493634, w: 0.99242383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftShoulder
+      parentName: AlexanderGomez_Spine1
+      position: {x: -0.036637545, y: 0.1608545, z: -0.003561467}
+      rotation: {x: -0.043380577, y: 0.13166057, z: -0.068947814, w: 0.9879422}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftArm
+      parentName: AlexanderGomez_LeftShoulder
+      position: {x: -0.12416417, y: 0, z: 0}
+      rotation: {x: -0.0050689187, y: -0.07501009, z: 0.071264714, w: 0.99462014}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftForeArm
+      parentName: AlexanderGomez_LeftArm
+      position: {x: -0.26759857, y: 0, z: 0}
+      rotation: {x: 0.02190172, y: 0.0073415907, z: -0.017553603, w: 0.9995791}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHand
+      parentName: AlexanderGomez_LeftForeArm
+      position: {x: -0.21396331, y: -0.0020519495, z: -0.002684854}
+      rotation: {x: 0.066340595, y: -0.048823316, z: -0.07895242, w: 0.99346954}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandThumb1
+      parentName: AlexanderGomez_LeftHand
+      position: {x: -0.022289975, y: -0.025329515, z: 0.03546132}
+      rotation: {x: -0.0069153984, y: 0.09701339, z: 0.0068102935, w: 0.99523574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandThumb2
+      parentName: AlexanderGomez_LeftHandThumb1
+      position: {x: -0.020836117, y: 0, z: 0.013588771}
+      rotation: {x: 0.00000088708435, y: 0.25713524, z: 0.0000016547266, w: 0.96637547}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandThumb3
+      parentName: AlexanderGomez_LeftHandThumb2
+      position: {x: -0.027177542, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandIndex1
+      parentName: AlexanderGomez_LeftHand
+      position: {x: -0.09118626, y: 0, z: 0.03546132}
+      rotation: {x: -0.0028578632, y: 0.055704538, z: -0.07938696, w: 0.99528223}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandIndex2
+      parentName: AlexanderGomez_LeftHandIndex1
+      position: {x: -0.045295905, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandIndex3
+      parentName: AlexanderGomez_LeftHandIndex2
+      position: {x: -0.022647953, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandMiddle1
+      parentName: AlexanderGomez_LeftHand
+      position: {x: -0.09118626, y: 0, z: 0.011752895}
+      rotation: {x: -0.0035969191, y: 0.031280417, z: -0.0751473, w: 0.99667525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandMiddle2
+      parentName: AlexanderGomez_LeftHandMiddle1
+      position: {x: -0.049825497, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0056488877, w: 0.9999841}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandMiddle3
+      parentName: AlexanderGomez_LeftHandMiddle2
+      position: {x: -0.027177542, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0028244476, w: 0.999996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandRing1
+      parentName: AlexanderGomez_LeftHand
+      position: {x: -0.086120345, y: 0, z: -0.011752895}
+      rotation: {x: -0.0026119584, y: -0.003549347, z: -0.044171777, w: 0.99901426}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandRing2
+      parentName: AlexanderGomez_LeftHandRing1
+      position: {x: -0.045295905, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.011297597, w: 0.9999362}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandRing3
+      parentName: AlexanderGomez_LeftHandRing2
+      position: {x: -0.022647953, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.005648896, w: 0.9999841}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandPinky1
+      parentName: AlexanderGomez_LeftHand
+      position: {x: -0.08105446, y: 0, z: -0.03546132}
+      rotation: {x: -0.00033090997, y: -0.018112151, z: 0.007457149, w: 0.99980813}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandPinky2
+      parentName: AlexanderGomez_LeftHandPinky1
+      position: {x: -0.036236726, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.017117096, w: 0.9998535}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftHandPinky3
+      parentName: AlexanderGomez_LeftHandPinky2
+      position: {x: -0.018118363, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.008558863, w: 0.9999634}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightShoulder
+      parentName: AlexanderGomez_Spine1
+      position: {x: 0.03542459, y: 0.1608545, z: -0.003561467}
+      rotation: {x: -0.0067834444, y: -0.031517096, z: 0.04473908, w: 0.9984784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightArm
+      parentName: AlexanderGomez_RightShoulder
+      position: {x: 0.12416417, y: 0, z: 0}
+      rotation: {x: 0.17430791, y: 0.062184256, z: -0.058757488, w: 0.9809676}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightForeArm
+      parentName: AlexanderGomez_RightArm
+      position: {x: 0.26759857, y: 0, z: 0}
+      rotation: {x: 0.008223502, y: -0.020602802, z: 0.026293444, w: 0.99940807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHand
+      parentName: AlexanderGomez_RightForeArm
+      position: {x: 0.204024, y: -0.0031055212, z: -0.002579525}
+      rotation: {x: -0.15301871, y: -0.07595716, z: 0.0942584, w: 0.9807809}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandThumb1
+      parentName: AlexanderGomez_RightHand
+      position: {x: 0.022289975, y: -0.025329515, z: 0.03546132}
+      rotation: {x: -0.007740733, y: -0.09093, z: 0.0076542078, w: 0.9957978}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandThumb2
+      parentName: AlexanderGomez_RightHandThumb1
+      position: {x: 0.020836117, y: 0, z: 0.013588771}
+      rotation: {x: 0.0000008805654, y: -0.25719818, z: -0.0000020568257, w: 0.9663587}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandThumb3
+      parentName: AlexanderGomez_RightHandThumb2
+      position: {x: 0.027177542, y: 0, z: 0}
+      rotation: {x: 0, y: 0.0024770473, z: -0, w: 0.99999696}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandIndex1
+      parentName: AlexanderGomez_RightHand
+      position: {x: 0.09118626, y: 0, z: 0.03546132}
+      rotation: {x: 0.0048081423, y: -0.03244414, z: 0.073113464, w: 0.99678415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandIndex2
+      parentName: AlexanderGomez_RightHandIndex1
+      position: {x: 0.045295905, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandIndex3
+      parentName: AlexanderGomez_RightHandIndex2
+      position: {x: 0.022647953, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandMiddle1
+      parentName: AlexanderGomez_RightHand
+      position: {x: 0.09118626, y: 0, z: 0.011752895}
+      rotation: {x: 0.006431323, y: -0.016125018, z: 0.06389285, w: 0.99780583}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandMiddle2
+      parentName: AlexanderGomez_RightHandMiddle1
+      position: {x: 0.049825497, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandMiddle3
+      parentName: AlexanderGomez_RightHandMiddle2
+      position: {x: 0.027177542, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandRing1
+      parentName: AlexanderGomez_RightHand
+      position: {x: 0.086120345, y: 0, z: -0.011752895}
+      rotation: {x: 0.008298141, y: -0.0028652688, z: 0.05088574, w: 0.9986659}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandRing2
+      parentName: AlexanderGomez_RightHandRing1
+      position: {x: 0.045295905, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandRing3
+      parentName: AlexanderGomez_RightHandRing2
+      position: {x: 0.022647953, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandPinky1
+      parentName: AlexanderGomez_RightHand
+      position: {x: 0.08105446, y: 0, z: -0.03546132}
+      rotation: {x: 0.010299739, y: 0.0058813677, z: 0.036324624, w: 0.99926966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandPinky2
+      parentName: AlexanderGomez_RightHandPinky1
+      position: {x: 0.036236726, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightHandPinky3
+      parentName: AlexanderGomez_RightHandPinky2
+      position: {x: 0.018118363, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftUpLeg
+      parentName: AlexanderGomez_Hips
+      position: {x: -0.09059181, y: 0, z: 0}
+      rotation: {x: 0.019075135, y: -0.08630331, z: -0.039909042, w: 0.99528646}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftLeg
+      parentName: AlexanderGomez_LeftUpLeg
+      position: {x: -0, y: -0.37315527, z: 0}
+      rotation: {x: 0.13468692, y: -0.041825067, z: 0.024771431, w: 0.98969513}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftFoot
+      parentName: AlexanderGomez_LeftLeg
+      position: {x: 0.00025120378, y: -0.3911472, z: -0.0011590719}
+      rotation: {x: -0.09097546, y: -0.030464608, z: -0.0064177914, w: 0.9953664}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_LeftToeBase
+      parentName: AlexanderGomez_LeftFoot
+      position: {x: -0, y: -0.058884677, z: 0.13588773}
+      rotation: {x: -0.039429996, y: 0.019867226, z: -0.00999254, w: 0.99897486}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightUpLeg
+      parentName: AlexanderGomez_Hips
+      position: {x: 0.09059181, y: 0, z: 0}
+      rotation: {x: 0.097501375, y: 0.10018848, z: 0.056976736, w: 0.98853904}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightLeg
+      parentName: AlexanderGomez_RightUpLeg
+      position: {x: -0, y: -0.37315527, z: 0}
+      rotation: {x: 0.008139935, y: 0.036564343, z: -0.03742245, w: 0.9985972}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightFoot
+      parentName: AlexanderGomez_RightLeg
+      position: {x: -0.0004785359, y: -0.39407676, z: -0.00064861774}
+      rotation: {x: -0.021064436, y: 0.056033906, z: -0.05800095, w: 0.99652016}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AlexanderGomez_RightToeBase
+      parentName: AlexanderGomez_RightFoot
+      position: {x: -0, y: -0.058884677, z: 0.13588773}
+      rotation: {x: 0.007080167, y: -0.010174252, z: 0.006813507, w: 0.9999}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

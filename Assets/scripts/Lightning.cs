@@ -140,6 +140,7 @@ public class Lightning : MonoBehaviour
             state = 0;
             powerAura.Stop();
             mySource.Stop();
+            
         }
             
     }
@@ -153,7 +154,7 @@ public class Lightning : MonoBehaviour
 
     public void ActiveTwo()
     {
-        lightningTime = 10;
+        lightningTime = 30;
         active = true;
         Invoke("UnActive", 1f);
     }
@@ -163,4 +164,6 @@ public class Lightning : MonoBehaviour
         active = false;
     }
 
+   
+    
 }
