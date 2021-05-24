@@ -132,6 +132,7 @@ public class ExplosionEffects : MonoBehaviour
             {
                 timeRain = 0;
                 play = false;
+                floor.enabled = false;
             } 
         }
     }
@@ -145,7 +146,7 @@ public class ExplosionEffects : MonoBehaviour
         complementMain.startColor = colorSmoke;
         light.color = colorSmoke;
         material.material = psMaterialCarbon;
-        floor.material = lavaFloor;
+        floor.material = Instantiate(lavaFloor);
     }
     void Ice()
     {
@@ -154,6 +155,6 @@ public class ExplosionEffects : MonoBehaviour
         complementMain.startColor = colorIce;
         light.color = colorIce;
         material.material = psMaterialSnow;
-        floor.material = iceFloor;
+        floor.material = Instantiate(iceFloor);
     }
 }
